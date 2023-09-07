@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartCreator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/chartcreator.css">
+</head>
+
+<body class="">
+
+
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <h1 class="display-1 fw-bold">ChartCreator</h1>
+        </div>
+        <!--justify-content-center-->
+        <div class="  m-4 d-flex shadow-lg .bg-light rounded-2 vh-25 justify-content-center">
+
+            <!--Chart Type -->
+            <div class="input-group-sm ">
+                <select class="custom-select  m-3" id="chartSelector">
+                    <option value="horizontalBar">bar </option>
+                    <option value="line">line</option>
+                    <option value="pie">pie</option>
+                </select>
+            </div>
+
+            <!-- Asse delle x  -->
+            <div class="input-group-sm m-3">
+                <input type="text" class="form-control" aria-label="Default" placeholder='Lucia Luca Giovanni Sabrina'
+                    aria-describedby="inputGroup-sizing-default" id="chartX">
+            </div>
+
+            <!-- Argomenti -->
+            <div class="input-group-sm m-3">
+                <input type="text" class="form-control" aria-label="Default" placeholder="Dogs"
+                    aria-describedby="inputGroup-sizing-default" id="param">
+            </div>
+
+            <!--Asse delle y-->
+            <div class="input-group-sm m-3">
+                <input type="text" class="form-control" aria-label="Default" placeholder="100, 200, 300, 400"
+                    aria-describedby="inputGroup-sizing-default" id="chartY">
+            </div>
+        </div>
+        <div class="m-5 justify-content-center d-flex">
+            <button type="button" id="chartGenerator" class="btn btn-primary">Genera</button>
+        </div>
+        <div class="d-flex shadow-lg  rounded-1  justify-content-center m-5">
+            <img class="" src="" alt="" id="chartImage">
+        </div>
+
+    </div>
+
+
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="../js/chartcreator.js"></script>
+    </footer>
+</body>
+
+</html>
